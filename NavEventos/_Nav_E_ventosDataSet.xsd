@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Nav_E_ventosDataSet" targetNamespace="http://tempuri.org/_Nav_E_ventosDataSet.xsd" xmlns:mstns="http://tempuri.org/_Nav_E_ventosDataSet.xsd" xmlns="http://tempuri.org/_Nav_E_ventosDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Nav_E_ventosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Nav_E_ventosConnectionString (Settings)" PropertyReference="ApplicationSettings.NavEventos.Properties.Settings.GlobalReference.Default.Nav_E_ventosConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Rel_RTOTableAdapter" GeneratorDataComponentClassName="Rel_RTOTableAdapter" Name="Rel_RTO" UserDataComponentName="Rel_RTOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Nav_E_ventosConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Rel_RTO.RAZAO_ORIGEM, Rel_RTO.CNPJ_ORIGEM, Rel_RTO.RAZAO_DESTINO, Rel_RTO.CNPJ_DESTINO, Rel_RTO.SEQ_EVENTO, Rel_RTO.NRO_RTO, 
+                         Rel_RTO.ID_FUNDO_ORIGEM, Rel_RTO.ID_FUNDO_DESTINO, Rel_RTO.USER_CAD, Rel_RTO.CLIENTE, Rel_RTO.EVENTO, Rel_RTO.FLAG, 
+                         Rel_RTO.DT_USER_CAD, Rel_RTO.[EVENTO_TB.USER_CAD], Rel_RTO.DTCOTA, Rel_RTO.DTDEMANDA, Rel_RTO.DESCRICAO, Rel_RTO.SIGLA_SAC_ORIGEM, 
+                         Rel_RTO.SIGLA_SAC_DESTINO, Rel_RTO.SIGLA_FY_ORIGEM, Rel_RTO.SIGLA_FY_DESTINO, VW_EVENTO_SETORES_POR_COLUNA.SETOR_GESTORES, 
+                         VW_EVENTO_SETORES_POR_COLUNA.SETOR_CONTROLADORIA, VW_EVENTO_SETORES_POR_COLUNA.SETOR_CUSTODIA, 
+                         VW_EVENTO_SETORES_POR_COLUNA.SETOR_INSTITUCIONAIS, VW_EVENTO_SETORES_POR_COLUNA.SETOR_INTRAG
+FROM            (Rel_RTO INNER JOIN
+                         VW_EVENTO_SETORES_POR_COLUNA ON Rel_RTO.SEQ_EVENTO = VW_EVENTO_SETORES_POR_COLUNA.SEQ_EVENTO)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RAZAO_ORIGEM" DataSetColumn="RAZAO_ORIGEM" />
+              <Mapping SourceColumn="CNPJ_ORIGEM" DataSetColumn="CNPJ_ORIGEM" />
+              <Mapping SourceColumn="RAZAO_DESTINO" DataSetColumn="RAZAO_DESTINO" />
+              <Mapping SourceColumn="CNPJ_DESTINO" DataSetColumn="CNPJ_DESTINO" />
+              <Mapping SourceColumn="SEQ_EVENTO" DataSetColumn="SEQ_EVENTO" />
+              <Mapping SourceColumn="NRO_RTO" DataSetColumn="NRO_RTO" />
+              <Mapping SourceColumn="ID_FUNDO_ORIGEM" DataSetColumn="ID_FUNDO_ORIGEM" />
+              <Mapping SourceColumn="ID_FUNDO_DESTINO" DataSetColumn="ID_FUNDO_DESTINO" />
+              <Mapping SourceColumn="USER_CAD" DataSetColumn="USER_CAD" />
+              <Mapping SourceColumn="CLIENTE" DataSetColumn="CLIENTE" />
+              <Mapping SourceColumn="EVENTO" DataSetColumn="EVENTO" />
+              <Mapping SourceColumn="FLAG" DataSetColumn="FLAG" />
+              <Mapping SourceColumn="DT_USER_CAD" DataSetColumn="DT_USER_CAD" />
+              <Mapping SourceColumn="EVENTO_TB.USER_CAD" DataSetColumn="EVENTO_TB_USER_CAD" />
+              <Mapping SourceColumn="DTCOTA" DataSetColumn="DTCOTA" />
+              <Mapping SourceColumn="DTDEMANDA" DataSetColumn="DTDEMANDA" />
+              <Mapping SourceColumn="DESCRICAO" DataSetColumn="DESCRICAO" />
+              <Mapping SourceColumn="SIGLA_SAC_ORIGEM" DataSetColumn="SIGLA_SAC_ORIGEM" />
+              <Mapping SourceColumn="SIGLA_SAC_DESTINO" DataSetColumn="SIGLA_SAC_DESTINO" />
+              <Mapping SourceColumn="SIGLA_FY_ORIGEM" DataSetColumn="SIGLA_FY_ORIGEM" />
+              <Mapping SourceColumn="SIGLA_FY_DESTINO" DataSetColumn="SIGLA_FY_DESTINO" />
+              <Mapping SourceColumn="SETOR_GESTORES" DataSetColumn="SETOR_GESTORES" />
+              <Mapping SourceColumn="SETOR_CONTROLADORIA" DataSetColumn="SETOR_CONTROLADORIA" />
+              <Mapping SourceColumn="SETOR_CUSTODIA" DataSetColumn="SETOR_CUSTODIA" />
+              <Mapping SourceColumn="SETOR_INSTITUCIONAIS" DataSetColumn="SETOR_INSTITUCIONAIS" />
+              <Mapping SourceColumn="SETOR_INTRAG" DataSetColumn="SETOR_INTRAG" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Nav_E_ventosConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByNumeroRTO" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByNumeroRTO" GeneratorSourceName="FillByNumeroRTO" GetMethodModifier="Public" GetMethodName="GetDataByNumeroRTO" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByNumeroRTO" UserSourceName="FillByNumeroRTO">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Rel_RTO.RAZAO_ORIGEM, Rel_RTO.CNPJ_ORIGEM, Rel_RTO.RAZAO_DESTINO, Rel_RTO.CNPJ_DESTINO, Rel_RTO.SEQ_EVENTO, Rel_RTO.NRO_RTO, 
+                         Rel_RTO.ID_FUNDO_ORIGEM, Rel_RTO.ID_FUNDO_DESTINO, Rel_RTO.USER_CAD, Rel_RTO.CLIENTE, Rel_RTO.EVENTO, Rel_RTO.FLAG, 
+                         Rel_RTO.DT_USER_CAD, Rel_RTO.[EVENTO_TB.USER_CAD], Rel_RTO.DTCOTA, Rel_RTO.DTDEMANDA, Rel_RTO.DESCRICAO, Rel_RTO.SIGLA_SAC_ORIGEM, 
+                         Rel_RTO.SIGLA_SAC_DESTINO, Rel_RTO.SIGLA_FY_ORIGEM, Rel_RTO.SIGLA_FY_DESTINO, VW_EVENTO_SETORES_POR_COLUNA.SETOR_GESTORES, 
+                         VW_EVENTO_SETORES_POR_COLUNA.SETOR_CONTROLADORIA, VW_EVENTO_SETORES_POR_COLUNA.SETOR_CUSTODIA, 
+                         VW_EVENTO_SETORES_POR_COLUNA.SETOR_INSTITUCIONAIS, VW_EVENTO_SETORES_POR_COLUNA.SETOR_INTRAG
+FROM            (Rel_RTO INNER JOIN
+                         VW_EVENTO_SETORES_POR_COLUNA ON Rel_RTO.SEQ_EVENTO = VW_EVENTO_SETORES_POR_COLUNA.SEQ_EVENTO)
+WHERE       Rel_RTO.NRO_RTO = ?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="NRO_RTO" DataSourceName="Rel_RTO" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="NRO_RTO" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NRO_RTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Nav_E_ventosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Nav_E_ventosDataSet" msprop:Generator_UserDSName="_Nav_E_ventosDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rel_RTO" msprop:Generator_TableClassName="Rel_RTODataTable" msprop:Generator_TableVarName="tableRel_RTO" msprop:Generator_RowChangedName="Rel_RTORowChanged" msprop:Generator_TablePropName="Rel_RTO" msprop:Generator_RowDeletingName="Rel_RTORowDeleting" msprop:Generator_RowChangingName="Rel_RTORowChanging" msprop:Generator_RowEvHandlerName="Rel_RTORowChangeEventHandler" msprop:Generator_RowDeletedName="Rel_RTORowDeleted" msprop:Generator_RowClassName="Rel_RTORow" msprop:Generator_UserTableName="Rel_RTO" msprop:Generator_RowEvArgName="Rel_RTORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RAZAO_ORIGEM" msprop:Generator_ColumnVarNameInTable="columnRAZAO_ORIGEM" msprop:Generator_ColumnPropNameInRow="RAZAO_ORIGEM" msprop:Generator_ColumnPropNameInTable="RAZAO_ORIGEMColumn" msprop:Generator_UserColumnName="RAZAO_ORIGEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNPJ_ORIGEM" msprop:Generator_ColumnVarNameInTable="columnCNPJ_ORIGEM" msprop:Generator_ColumnPropNameInRow="CNPJ_ORIGEM" msprop:Generator_ColumnPropNameInTable="CNPJ_ORIGEMColumn" msprop:Generator_UserColumnName="CNPJ_ORIGEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RAZAO_DESTINO" msprop:Generator_ColumnVarNameInTable="columnRAZAO_DESTINO" msprop:Generator_ColumnPropNameInRow="RAZAO_DESTINO" msprop:Generator_ColumnPropNameInTable="RAZAO_DESTINOColumn" msprop:Generator_UserColumnName="RAZAO_DESTINO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNPJ_DESTINO" msprop:Generator_ColumnVarNameInTable="columnCNPJ_DESTINO" msprop:Generator_ColumnPropNameInRow="CNPJ_DESTINO" msprop:Generator_ColumnPropNameInTable="CNPJ_DESTINOColumn" msprop:Generator_UserColumnName="CNPJ_DESTINO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEQ_EVENTO" msprop:Generator_ColumnVarNameInTable="columnSEQ_EVENTO" msprop:Generator_ColumnPropNameInRow="SEQ_EVENTO" msprop:Generator_ColumnPropNameInTable="SEQ_EVENTOColumn" msprop:Generator_UserColumnName="SEQ_EVENTO" type="xs:int" minOccurs="0" />
+              <xs:element name="NRO_RTO" msprop:Generator_ColumnVarNameInTable="columnNRO_RTO" msprop:Generator_ColumnPropNameInRow="NRO_RTO" msprop:Generator_ColumnPropNameInTable="NRO_RTOColumn" msprop:Generator_UserColumnName="NRO_RTO" type="xs:int" minOccurs="0" />
+              <xs:element name="ID_FUNDO_ORIGEM" msprop:Generator_ColumnVarNameInTable="columnID_FUNDO_ORIGEM" msprop:Generator_ColumnPropNameInRow="ID_FUNDO_ORIGEM" msprop:Generator_ColumnPropNameInTable="ID_FUNDO_ORIGEMColumn" msprop:Generator_UserColumnName="ID_FUNDO_ORIGEM" type="xs:int" minOccurs="0" />
+              <xs:element name="ID_FUNDO_DESTINO" msprop:Generator_ColumnVarNameInTable="columnID_FUNDO_DESTINO" msprop:Generator_ColumnPropNameInRow="ID_FUNDO_DESTINO" msprop:Generator_ColumnPropNameInTable="ID_FUNDO_DESTINOColumn" msprop:Generator_UserColumnName="ID_FUNDO_DESTINO" type="xs:int" minOccurs="0" />
+              <xs:element name="USER_CAD" msprop:Generator_ColumnVarNameInTable="columnUSER_CAD" msprop:Generator_ColumnPropNameInRow="USER_CAD" msprop:Generator_ColumnPropNameInTable="USER_CADColumn" msprop:Generator_UserColumnName="USER_CAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENTE" msprop:Generator_ColumnVarNameInTable="columnCLIENTE" msprop:Generator_ColumnPropNameInRow="CLIENTE" msprop:Generator_ColumnPropNameInTable="CLIENTEColumn" msprop:Generator_UserColumnName="CLIENTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENTO" msprop:Generator_ColumnVarNameInTable="columnEVENTO" msprop:Generator_ColumnPropNameInRow="EVENTO" msprop:Generator_ColumnPropNameInTable="EVENTOColumn" msprop:Generator_UserColumnName="EVENTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLAG" msprop:Generator_ColumnVarNameInTable="columnFLAG" msprop:Generator_ColumnPropNameInRow="FLAG" msprop:Generator_ColumnPropNameInTable="FLAGColumn" msprop:Generator_UserColumnName="FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DT_USER_CAD" msprop:Generator_ColumnVarNameInTable="columnDT_USER_CAD" msprop:Generator_ColumnPropNameInRow="DT_USER_CAD" msprop:Generator_ColumnPropNameInTable="DT_USER_CADColumn" msprop:Generator_UserColumnName="DT_USER_CAD" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EVENTO_TB_USER_CAD" msprop:Generator_ColumnVarNameInTable="columnEVENTO_TB_USER_CAD" msprop:Generator_ColumnPropNameInRow="EVENTO_TB_USER_CAD" msprop:Generator_ColumnPropNameInTable="EVENTO_TB_USER_CADColumn" msprop:Generator_UserColumnName="EVENTO_TB_USER_CAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DTCOTA" msprop:Generator_ColumnVarNameInTable="columnDTCOTA" msprop:Generator_ColumnPropNameInRow="DTCOTA" msprop:Generator_ColumnPropNameInTable="DTCOTAColumn" msprop:Generator_UserColumnName="DTCOTA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DTDEMANDA" msprop:Generator_ColumnVarNameInTable="columnDTDEMANDA" msprop:Generator_ColumnPropNameInRow="DTDEMANDA" msprop:Generator_ColumnPropNameInTable="DTDEMANDAColumn" msprop:Generator_UserColumnName="DTDEMANDA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DESCRICAO" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO" msprop:Generator_ColumnPropNameInRow="DESCRICAO" msprop:Generator_ColumnPropNameInTable="DESCRICAOColumn" msprop:Generator_UserColumnName="DESCRICAO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SIGLA_SAC_ORIGEM" msprop:Generator_ColumnVarNameInTable="columnSIGLA_SAC_ORIGEM" msprop:Generator_ColumnPropNameInRow="SIGLA_SAC_ORIGEM" msprop:Generator_ColumnPropNameInTable="SIGLA_SAC_ORIGEMColumn" msprop:Generator_UserColumnName="SIGLA_SAC_ORIGEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SIGLA_SAC_DESTINO" msprop:Generator_ColumnVarNameInTable="columnSIGLA_SAC_DESTINO" msprop:Generator_ColumnPropNameInRow="SIGLA_SAC_DESTINO" msprop:Generator_ColumnPropNameInTable="SIGLA_SAC_DESTINOColumn" msprop:Generator_UserColumnName="SIGLA_SAC_DESTINO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SIGLA_FY_ORIGEM" msprop:Generator_ColumnVarNameInTable="columnSIGLA_FY_ORIGEM" msprop:Generator_ColumnPropNameInRow="SIGLA_FY_ORIGEM" msprop:Generator_ColumnPropNameInTable="SIGLA_FY_ORIGEMColumn" msprop:Generator_UserColumnName="SIGLA_FY_ORIGEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SIGLA_FY_DESTINO" msprop:Generator_ColumnVarNameInTable="columnSIGLA_FY_DESTINO" msprop:Generator_ColumnPropNameInRow="SIGLA_FY_DESTINO" msprop:Generator_ColumnPropNameInTable="SIGLA_FY_DESTINOColumn" msprop:Generator_UserColumnName="SIGLA_FY_DESTINO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SETOR_GESTORES" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSETOR_GESTORES" msprop:Generator_ColumnPropNameInRow="SETOR_GESTORES" msprop:Generator_ColumnPropNameInTable="SETOR_GESTORESColumn" msprop:Generator_UserColumnName="SETOR_GESTORES" type="xs:short" minOccurs="0" />
+              <xs:element name="SETOR_CONTROLADORIA" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSETOR_CONTROLADORIA" msprop:Generator_ColumnPropNameInRow="SETOR_CONTROLADORIA" msprop:Generator_ColumnPropNameInTable="SETOR_CONTROLADORIAColumn" msprop:Generator_UserColumnName="SETOR_CONTROLADORIA" type="xs:short" minOccurs="0" />
+              <xs:element name="SETOR_CUSTODIA" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSETOR_CUSTODIA" msprop:Generator_ColumnPropNameInRow="SETOR_CUSTODIA" msprop:Generator_ColumnPropNameInTable="SETOR_CUSTODIAColumn" msprop:Generator_UserColumnName="SETOR_CUSTODIA" type="xs:short" minOccurs="0" />
+              <xs:element name="SETOR_INSTITUCIONAIS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSETOR_INSTITUCIONAIS" msprop:Generator_ColumnPropNameInRow="SETOR_INSTITUCIONAIS" msprop:Generator_ColumnPropNameInTable="SETOR_INSTITUCIONAISColumn" msprop:Generator_UserColumnName="SETOR_INSTITUCIONAIS" type="xs:short" minOccurs="0" />
+              <xs:element name="SETOR_INTRAG" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSETOR_INTRAG" msprop:Generator_ColumnPropNameInRow="SETOR_INTRAG" msprop:Generator_ColumnPropNameInTable="SETOR_INTRAGColumn" msprop:Generator_UserColumnName="SETOR_INTRAG" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

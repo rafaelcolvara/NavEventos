@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavEventos", "NavEventos\NavEventos.csproj", "{C5375384-A869-4723-954F-F589E5E76F09}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_Nav[E]ventos", "Setup\Setup.vdproj", "{7BAF5941-C7F2-494B-86D2-D8F0D4ED4CAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5375384-A869-4723-954F-F589E5E76F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5375384-A869-4723-954F-F589E5E76F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5375384-A869-4723-954F-F589E5E76F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5375384-A869-4723-954F-F589E5E76F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAF5941-C7F2-494B-86D2-D8F0D4ED4CAA}.Debug|Any CPU.ActiveCfg = Debug
+		{7BAF5941-C7F2-494B-86D2-D8F0D4ED4CAA}.Debug|Any CPU.Build.0 = Debug
+		{7BAF5941-C7F2-494B-86D2-D8F0D4ED4CAA}.Release|Any CPU.ActiveCfg = Release
+		{7BAF5941-C7F2-494B-86D2-D8F0D4ED4CAA}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal
